@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motion planning · Path planning for the DE NIRO robot · Louis McEvoy</title>
+<meta name="description" content="Five planners for a 1 m-wide robot in a cluttered world, benchmarked against A*.">
+<meta name="theme-color" content="#e8e9ea">
+<meta property="og:title" content="Motion planning · Path planning for the DE NIRO robot · Louis McEvoy">
+<meta property="og:description" content="Five planners for a 1 m-wide robot in a cluttered world, benchmarked against A*.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../assets/img/scope-hero-1600.webp">
+<link rel="preload" href="../assets/fonts/inter-tight.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230e0f10'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' text-anchor='middle' fill='%23d9f84a'%3ELM%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap nav-in">
+  <a class="wordmark" href="../index.html">Louis McEvoy</a>
+  <nav class="nav-links" aria-label="Primary">
+    <a class="" href="../index.html#work" aria-current="page">Work</a>
+    <a class="hide-sm" href="../index.html#about">About</a>
+    <a class="btn" href="mailto:louis.mcevoy23@imperial.ac.uk">Contact</a>
+  </nav>
+</div></header>
+<main id="main">
+
+<div class="wrap cs-head">
+  <div class="top spec"><a href="../index.html#work">← All work</a><span class="muted">Project 04 / 07</span></div>
+  <div class="cs-title">
+    <h1 class="display rv">Motion planning</h1>
+    <p class="lead rv" style="--d:100ms">Five planners for a 1 m-wide robot in a cluttered world, benchmarked against A*.</p>
+  </div>
+  <dl class="facts rv"><div><dt class="spec">Year</dt><dd>2026</dd></div><div><dt class="spec">Type</dt><dd>Team of four</dd></div><div><dt class="spec">Stack</dt><dd>Python, NumPy, SciPy</dd></div><div><dt class="spec">Platform</dt><dd>ROS, Gazebo, DE NIRO</dd></div></dl>
+  
+</div>
+<div class="" style="">
+<div class="wrap cs-hero rv" style=""><div class="panel pad" style="aspect-ratio:16/9"><img src="../assets/img/robo-graph-703.webp" srcset="../assets/img/robo-graph-703.webp 703w" sizes="100vw" width="703" height="681" alt="Probabilistic roadmap: accepted edges in teal, rejected in red" decoding="async" fetchpriority="high"></div></div>
+</div>
+<div class="wrap section"><div class="brief rv"><div><h2 class="spec">Problem</h2><p>Drive DE NIRO, a 1 m-wide mobile manipulator, from (0, −6) m to (8, 8) m through a cluttered world where the direct route is blocked.</p></div><div><h2 class="spec">Approach</h2><p>C-space dilation, manual waypoints, potential fields, a probabilistic roadmap and Dijkstra search, benchmarked against A*.</p></div><div><h2 class="spec">Result</h2><p>A roadmap path of 18.68 m: within 4% of optimal and 15% shorter than the manual route.</p></div></div></div>
+<div class="wrap section"><section class="chapter full">
+  <div class="text" data-stagger><p class="spec muted rv">01 · Try it</p><h2 class="h3 rv">The planner, running in your browser</h2><p class="rv">The coursework map, re-implemented here. Switch between footprint masks to see how C-space reshapes the corridors, then move the goal and watch A* replan.</p></div>
+  <div class="vis figures" data-stagger><div class="planner rv" data-planner data-map="0,319,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,41,59,44,28,44,60,40,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,144,28,144,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,18,279,19,1,2,1,18,279,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,18,51,20,45,43,52,20,48,19,1,2,1,1,68,20,45,43,52,20,68,2,1,1,68,20,45,43,52,20,68,2,1,1,68,20,45,43,52,20,68,2,1,1,68,20,36,60,44,20,68,2,1,1,68,20,36,60,44,20,68,2,1,1,68,20,36,60,44,20,68,2,1,1,68,20,36,60,44,20,68,2,1,1,68,20,36,60,44,20,68,2,1,1,68,20,36,60,44,20,68,2,1,1,68,20,36,60,44,20,68,2,1,1,68,20,36,60,44,20,68,2,1,1,68,20,36,60,44,20,68,2,1,1,68,20,36,60,44,20,68,2,1,1,68,20,36,60,44,20,68,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,124,60,132,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,55,64,79,64,54,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,316,2,1,1,139,39,138,2,1,1,139,39,138,2,1,1,139,39,138,2,1,1,139,39,138,2,1,1,139,39,138,2,1,1,139,39,138,2,1,1,139,39,138,2,1,1,139,39,138,2,1,1,139,39,138,2,1,1,139,39,138,2,1,42,98,39,98,85,98,39,98,85,98,39,98,85,98,39,98,85,98,39,98,85,98,39,98,85,98,39,98,85,98,39,98,85,98,39,98,85,98,39,98,85,98,39,98,85,98,39,98,85,98,39,98,85,98,39,98,85,98,39,98,85,98,39,98,85,98,39,98,85,98,39,98,85,98,39,98,85,98,39,98,44,139,39,138,2,1,319,1,318,2">
+  <div class="canvas-wrap"><canvas tabindex="0" role="img" aria-label="Map of the DE NIRO world. Click or tap to move the goal; arrow keys also move it."></canvas></div>
+  <div class="side">
+    <p class="spec muted">Live A* planner</p>
+    <div><p class="readout"><span data-len>18.05</span><span style="font-size:.4em"> m</span></p><p class="spec muted" style="margin-top:6px">Shortest path from start</p></div>
+    <div class="seg" role="group" aria-label="Robot footprint mask"><button type="button" data-mask="circle" aria-pressed="true">Circular mask</button><button type="button" data-mask="square" aria-pressed="false">Square mask</button></div>
+    <p class="spec" aria-live="polite" data-status>Goal (8.0, 8.0) m. Path found.</p>
+    <p style="font-size:15px">Tap or drag on the map to move the goal. Grey shows the C-space margin added for the robot’s 1 m width.</p>
+    <p><button type="button" class="btn ghost" data-reset>Reset goal</button></p>
+  </div>
+</div></div>
+</section></div><div class="wrap section"><section class="chapter flip">
+  <div class="text" data-stagger><p class="spec muted rv">02 · Configuration space</p><h2 class="h3 rv">Shrink the robot, grow the world</h2><p class="rv">DE NIRO is 1 m wide, so every obstacle is dilated by its radius and the robot can be planned as a point. On a 320 × 320 grid at 16 px/m, a circular mask keeps corners true to shape and leaves a 0.72 m corridor where a square mask leaves only 0.31 m.</p><ul class="specs spec rv"><li><span>Free space, original</span><span>77.5%</span></li><li><span>Circular mask</span><span>54.7%</span></li><li><span>Square mask</span><span>54.2%</span></li><li><span>Corridor, circular</span><span>0.72 m</span></li><li><span>Corridor, square</span><span>0.31 m</span></li></ul></div>
+  <div class="vis figures" data-stagger><figure class="f rv "><div class="panel pad" style="aspect-ratio:1/1"><img src="../assets/img/robo-samples-416.webp" srcset="../assets/img/robo-samples-416.webp 416w" sizes="(max-width: 900px) 50vw, 29vw" width="416" height="410" alt="Random samples on the map: accepted in green, rejected in red" decoding="async" loading="lazy"></div><figcaption class="cap spec"><b>Fig. 1</b><span>PRM samples, accepted and rejected</span></figcaption></figure><figure class="f rv "><div class="panel pad" style="aspect-ratio:1/1"><img src="../assets/img/robo-field-415.webp" srcset="../assets/img/robo-field-415.webp 415w" sizes="(max-width: 900px) 50vw, 29vw" width="415" height="402" alt="Potential field force vectors around obstacles" decoding="async" loading="lazy"></div><figcaption class="cap spec"><b>Fig. 2</b><span>Potential field vectors</span></figcaption></figure></div>
+</section></div><div class="wrap section"><section class="chapter">
+  <div class="text" data-stagger><p class="spec muted rv">03 · Results</p><h2 class="h3 rv">Near-optimal without a grid search</h2><p class="rv">The probabilistic roadmap, searched with Dijkstra, found a path within 4% of the A* optimum and 15% shorter than hand-picked waypoints. Potential fields were fastest to react but needed careful gain tuning to avoid local minima.</p><p class="rv">Uniform sampling misses narrow passages, so we proposed bridge sampling to close the remaining gap.</p></div>
+  <div class="vis figures" data-stagger><div class="bars rv"><h3 class="spec">Path length, start to goal (m)</h3><div class="bar"><span class="spec">Manual waypoints</span><span class="track"><span class="fill" data-v="1.000" style="transform:scaleX(1.000)"></span></span><span class="v num">22.00</span></div><div class="bar"><span class="spec">Potential fields</span><span class="track"><span class="fill" data-v="0.936" style="transform:scaleX(0.936)"></span></span><span class="v num">20.60</span></div><div class="bar"><span class="spec">PRM + Dijkstra</span><span class="track"><span class="fill" data-v="0.849" style="transform:scaleX(0.849)"></span></span><span class="v num">18.68</span></div><div class="bar best"><span class="spec">A* (optimal)</span><span class="track"><span class="fill" data-v="0.820" style="transform:scaleX(0.820)"></span></span><span class="v num">18.05</span></div></div><figure class="f rv wide"><div class="panel pad" style="aspect-ratio:1/1"><img src="../assets/img/robo-final-679.webp" srcset="../assets/img/robo-final-679.webp 679w" sizes="(max-width: 900px) 100vw, 58vw" width="679" height="665" alt="Final PRM path from start to goal" decoding="async" loading="lazy"></div><figcaption class="cap spec"><b>Fig. 3</b><span>Final PRM path, 18.68 m</span></figcaption></figure></div>
+</section></div>
+<div class="wrap"><a class="next" href="nocturne.html"><span class="spec muted">Next project · 05</span><span class="h2">Nocturne <span class="arrow" aria-hidden="true">→</span></span></a></div>
+</main>
+<footer class="wrap" id="contact">
+  <section class="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h" class="spec muted">Contact</h2>
+    <p style="margin-top:18px"><a class="mail" href="mailto:louis.mcevoy23@imperial.ac.uk">louis.mcevoy23<wbr>@imperial.ac.uk</a></p>
+    <div class="links">
+      <a class="btn" href="mailto:louis.mcevoy23@imperial.ac.uk">Email <span class="arrow" aria-hidden="true">→</span></a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/louis-mcevoy-3b7aa0287/" rel="noopener">LinkedIn <span class="arrow" aria-hidden="true">↗</span></a>
+      <a class="btn ghost" href="mailto:louissmcevoy@icloud.com">louissmcevoy@icloud.com</a>
+    </div>
+  </section>
+  <p class="bigname" aria-hidden="true">Louis McEvoy</p>
+  <div class="foot spec muted"><span>© 2026 Louis McEvoy</span><span>Design Engineering, Imperial College London</span><a href="#main">Back to top ↑</a></div>
+</footer>
+<script src="../assets/site.js" defer></script>
+</body>
+</html>

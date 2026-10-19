@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nocturne · Light-fearing walking robot · Louis McEvoy</title>
+<meta name="description" content="A timid walking robot that senses light in 360° and runs from it.">
+<meta name="theme-color" content="#e8e9ea">
+<meta property="og:title" content="Nocturne · Light-fearing walking robot · Louis McEvoy">
+<meta property="og:description" content="A timid walking robot that senses light in 360° and runs from it.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../assets/img/scope-hero-1600.webp">
+<link rel="preload" href="../assets/fonts/inter-tight.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230e0f10'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' text-anchor='middle' fill='%23d9f84a'%3ELM%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap nav-in">
+  <a class="wordmark" href="../index.html">Louis McEvoy</a>
+  <nav class="nav-links" aria-label="Primary">
+    <a class="" href="../index.html#work" aria-current="page">Work</a>
+    <a class="hide-sm" href="../index.html#about">About</a>
+    <a class="btn" href="mailto:louis.mcevoy23@imperial.ac.uk">Contact</a>
+  </nav>
+</div></header>
+<main id="main">
+
+<div class="wrap cs-head">
+  <div class="top spec"><a href="../index.html#work">← All work</a><span class="muted">Project 05 / 07</span></div>
+  <div class="cs-title">
+    <h1 class="display rv">Nocturne</h1>
+    <p class="lead rv" style="--d:100ms">A timid walking robot that senses light in 360° and runs from it.</p>
+  </div>
+  <dl class="facts rv"><div><dt class="spec">Timeline</dt><dd>Oct – Dec 2024</dd></div><div><dt class="spec">Focus</dt><dd>Mechatronics, character</dd></div><div><dt class="spec">Electronics</dt><dd>Custom PCB, Arduino</dd></div><div><dt class="spec">Fabrication</dt><dd>FDM, laser cutting</dd></div></dl>
+  
+</div>
+<div class="night" style="padding-block:clamp(16px,3vw,40px);margin-top:clamp(28px,4vw,56px)">
+<div class="wrap cs-hero rv" style="margin-top:0"><div class="panel cover" style="aspect-ratio:16/9"><img src="../assets/img/noc-cover-1600.webp" srcset="../assets/img/noc-cover-800.webp 800w, ../assets/img/noc-cover-1600.webp 1600w, ../assets/img/noc-cover-2400.webp 2400w" sizes="100vw" width="2400" height="1600" alt="Nocturne’s four eyes in a dark studio" decoding="async" fetchpriority="high"></div></div>
+</div>
+<div class="wrap section"><div class="brief rv"><div><h2 class="spec">Concept</h2><p>An exploration of creative engineering, inspired by 1970s Soviet excavators and the desert robots of Star Wars.</p></div><div><h2 class="spec">Build</h2><p>A recycled, hand-painted aluminium shell, semi-bipedal walking and four expressive eyes.</p></div><div><h2 class="spec">Behaviour</h2><p>A 360° light-sensing PCB lets Nocturne detect light and flee from it.</p></div></div></div>
+<div class="wrap section"><section class="chapter">
+  <div class="text" data-stagger><p class="spec muted rv">01 · Mechanism</p><h2 class="h3 rv">Walking, borrowed from animals</h2><p class="rv">The legs follow animal physiology: printed “hamstrings” pull the foot through a natural step. A stepper motor drives a rack and pinion for the gait.</p><p class="rv">Four eyelids open and close from a single servo through a four-gear train.</p><ul class="specs spec rv"><li><span>Gait</span><span>4× 28BYJ-48 stepper</span></li><li><span>Eyelids</span><span>1× SG90 servo, 4 gears</span></li><li><span>Eyes</span><span>4× LED</span></li><li><span>Sensing</span><span>4× LDR, custom PCB</span></li><li><span>Controller</span><span>Arduino Uno, C++</span></li></ul></div>
+  <div class="vis figures" data-stagger><figure class="f rv wide"><div class="panel pad multiply" style="aspect-ratio:16/10"><img src="../assets/img/noc-gears-1600.webp" srcset="../assets/img/noc-gears-800.webp 800w, ../assets/img/noc-gears-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 58vw" width="1600" height="1077" alt="Exploded drawing of the four-gear eyelid train" decoding="async" loading="lazy"></div><figcaption class="cap spec"><b>Fig. 1</b><span>Eyelid gear train</span></figcaption></figure><figure class="f rv "><div class="panel pad multiply" style="aspect-ratio:1/1"><img src="../assets/img/noc-rack-800.webp" srcset="../assets/img/noc-rack-800.webp 800w" sizes="(max-width: 900px) 50vw, 29vw" width="800" height="1140" alt="Drawing of the rack and pinion drive" decoding="async" loading="lazy"></div><figcaption class="cap spec"><b>Fig. 2</b><span>Rack and pinion</span></figcaption></figure><figure class="f rv "><div class="panel cover" style="aspect-ratio:1/1"><img src="../assets/img/noc-leg-1600.webp" srcset="../assets/img/noc-leg-800.webp 800w, ../assets/img/noc-leg-1600.webp 1600w, ../assets/img/noc-leg-2400.webp 2400w" sizes="(max-width: 900px) 50vw, 29vw" width="2400" height="1600" alt="Close-up of the leg linkage" decoding="async" loading="lazy"></div><figcaption class="cap spec"><b>Fig. 3</b><span>Leg linkage</span></figcaption></figure></div>
+</section></div><div class="wrap section"><section class="chapter flip">
+  <div class="text" data-stagger><p class="spec muted rv">02 · Character</p><h2 class="h3 rv">A machine you feel sorry for</h2><p class="rv">Its eyes glow green when calm and red when angry. The timid behaviour and the distressed, hand-painted carapace draw out compassion rather than fear.</p></div>
+  <div class="vis figures" data-stagger><figure class="f rv wide"><div class="panel cover" style="aspect-ratio:3/2"><img src="../assets/img/noc-eyes-1600.webp" srcset="../assets/img/noc-eyes-800.webp 800w, ../assets/img/noc-eyes-1600.webp 1600w, ../assets/img/noc-eyes-2400.webp 2400w" sizes="(max-width: 900px) 100vw, 58vw" width="2400" height="1600" alt="Close-up of the four glowing eyes" decoding="async" loading="lazy"></div><figcaption class="cap spec"><b>Fig. 4</b><span>Expressive eyes</span></figcaption></figure><figure class="f rv wide"><div class="panel cover" style="aspect-ratio:3/2"><img src="../assets/img/noc-side-1600.webp" srcset="../assets/img/noc-side-800.webp 800w, ../assets/img/noc-side-1600.webp 1600w, ../assets/img/noc-side-2400.webp 2400w" sizes="(max-width: 900px) 100vw, 58vw" width="2400" height="1600" alt="Nocturne in profile" decoding="async" loading="lazy"></div><figcaption class="cap spec"><b>Fig. 5</b><span>Profile</span></figcaption></figure></div>
+</section></div><div class="night night-block"><div class="wrap"><section class="chapter">
+  <div class="text" data-stagger><p class="spec muted rv">03 · Sensing</p><h2 class="h3 rv">Light in, retreat out</h2><p class="rv">A custom 360° light-sensing PCB on a rotating mast tells Nocturne where light is coming from, and it walks the other way. Behaviour is written in C++ on an Arduino Uno.</p></div>
+  <div class="vis figures" data-stagger><figure class="f rv wide"><div class="panel cover" style="aspect-ratio:3/2"><img src="../assets/img/noc-pcb-1600.webp" srcset="../assets/img/noc-pcb-800.webp 800w, ../assets/img/noc-pcb-1600.webp 1600w, ../assets/img/noc-pcb-2400.webp 2400w" sizes="(max-width: 900px) 100vw, 58vw" width="2400" height="1600" alt="Light-sensing PCB on top of the rack" decoding="async" loading="lazy"></div><figcaption class="cap spec"><b>Fig. 6</b><span>360° sensing PCB</span></figcaption></figure><figure class="f rv wide"><div class="panel pad multiply" style="aspect-ratio:16/10"><img src="../assets/img/noc-arduino-1600.webp" srcset="../assets/img/noc-arduino-800.webp 800w, ../assets/img/noc-arduino-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 58vw" width="1600" height="1327" alt="Drawing of the Arduino and wiring layout" decoding="async" loading="lazy"></div><figcaption class="cap spec"><b>Fig. 7</b><span>Controller layout</span></figcaption></figure></div>
+</section></div></div>
+<div class="wrap"><a class="next" href="aero.html"><span class="spec muted">Next project · 06</span><span class="h2">Aero muscle car <span class="arrow" aria-hidden="true">→</span></span></a></div>
+</main>
+<footer class="wrap" id="contact">
+  <section class="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h" class="spec muted">Contact</h2>
+    <p style="margin-top:18px"><a class="mail" href="mailto:louis.mcevoy23@imperial.ac.uk">louis.mcevoy23<wbr>@imperial.ac.uk</a></p>
+    <div class="links">
+      <a class="btn" href="mailto:louis.mcevoy23@imperial.ac.uk">Email <span class="arrow" aria-hidden="true">→</span></a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/louis-mcevoy-3b7aa0287/" rel="noopener">LinkedIn <span class="arrow" aria-hidden="true">↗</span></a>
+      <a class="btn ghost" href="mailto:louissmcevoy@icloud.com">louissmcevoy@icloud.com</a>
+    </div>
+  </section>
+  <p class="bigname" aria-hidden="true">Louis McEvoy</p>
+  <div class="foot spec muted"><span>© 2026 Louis McEvoy</span><span>Design Engineering, Imperial College London</span><a href="#main">Back to top ↑</a></div>
+</footer>
+<script src="../assets/site.js" defer></script>
+</body>
+</html>

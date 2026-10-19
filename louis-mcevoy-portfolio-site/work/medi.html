@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medi · Automated medication dispenser · Louis McEvoy</title>
+<meta name="description" content="An automated pill and water dispenser that takes medication rounds off carers’ hands.">
+<meta name="theme-color" content="#e8e9ea">
+<meta property="og:title" content="Medi · Automated medication dispenser · Louis McEvoy">
+<meta property="og:description" content="An automated pill and water dispenser that takes medication rounds off carers’ hands.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../assets/img/scope-hero-1600.webp">
+<link rel="preload" href="../assets/fonts/inter-tight.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230e0f10'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' text-anchor='middle' fill='%23d9f84a'%3ELM%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap nav-in">
+  <a class="wordmark" href="../index.html">Louis McEvoy</a>
+  <nav class="nav-links" aria-label="Primary">
+    <a class="" href="../index.html#work" aria-current="page">Work</a>
+    <a class="hide-sm" href="../index.html#about">About</a>
+    <a class="btn" href="mailto:louis.mcevoy23@imperial.ac.uk">Contact</a>
+  </nav>
+</div></header>
+<main id="main">
+
+<div class="wrap cs-head">
+  <div class="top spec"><a href="../index.html#work">← All work</a><span class="muted">Project 02 / 07</span></div>
+  <div class="cs-title">
+    <h1 class="display rv">Medi</h1>
+    <p class="lead rv" style="--d:100ms">An automated pill and water dispenser that takes medication rounds off carers’ hands.</p>
+  </div>
+  <dl class="facts rv"><div><dt class="spec">Timeline</dt><dd>Jan – Jul 2025</dd></div><div><dt class="spec">Type</dt><dd>Team project</dd></div><div><dt class="spec">Focus</dt><dd>Research, mechatronics</dd></div><div><dt class="spec">Stack</dt><dd>ESP32, custom PCB, app</dd></div></dl>
+  <p style="margin-top:24px" class="rv"><a class="btn" href="https://www.youtube.com/watch?v=uWLiq6WrQlE" rel="noopener">Watch the product video ↗</a></p>
+</div>
+<div class="" style="">
+<div class="wrap cs-hero rv" style=""><div class="panel cover" style="aspect-ratio:16/9"><img src="../assets/img/medi-hero-1600.webp" srcset="../assets/img/medi-hero-800.webp 800w, ../assets/img/medi-hero-1600.webp 1600w, ../assets/img/medi-hero-2400.webp 2400w" sizes="100vw" width="2400" height="1577" alt="Medi dispenser on a kitchen counter beside a phone running the app" decoding="async" fetchpriority="high"></div></div>
+</div>
+<div class="wrap section"><div class="brief rv"><div><h2 class="spec">Problem</h2><p>Caregivers spend too long managing medication, and human error puts elderly patients at risk.</p></div><div><h2 class="spec">Approach</h2><p>An automated pill and water dispenser with touchscreen and audio reminders, plus an app for remote monitoring.</p></div><div><h2 class="spec">Result</h2><p>A working prototype that holds three weeks of daily medication, shown in a product video.</p></div></div></div>
+<div class="wrap section"><section class="chapter">
+  <div class="text" data-stagger><p class="spec muted rv">01 · Research</p><h2 class="h3 rv">Three countries, one routine</h2><p class="rv">We interviewed caregivers in France, the UK and Hong Kong, and spoke to a geriatric doctor, a psychiatrist and a former social worker.</p><p class="rv">At Kippington nursing home in Sevenoaks we watched medication rounds, storage and delivery first-hand, then ran co-working sessions with caregivers and tore down competing products.</p><ul class="specs spec rv"><li><span>Interviews</span><span>Carers, clinicians</span></li><li><span>Site visits</span><span>Care homes</span></li><li><span>Markets</span><span>UK, France, Hong Kong</span></li><li><span>Teardowns</span><span>Competitor devices</span></li></ul></div>
+  <div class="vis figures" data-stagger><figure class="f rv wide"><div class="panel cover" style="aspect-ratio:16/9"><img src="../assets/img/medi-home-800.webp" srcset="../assets/img/medi-home-800.webp 800w" sizes="(max-width: 900px) 100vw, 58vw" width="800" height="450" alt="Kippington nursing home in Sevenoaks" decoding="async" loading="lazy"></div><figcaption class="cap spec"><b>Fig. 1</b><span>Kippington, Sevenoaks</span></figcaption></figure><figure class="f rv wide"><div class="panel cover" style="aspect-ratio:4/3"><img src="../assets/img/medi-desk-1600.webp" srcset="../assets/img/medi-desk-800.webp 800w, ../assets/img/medi-desk-1600.webp 1600w, ../assets/img/medi-desk-2400.webp 2400w" sizes="(max-width: 900px) 100vw, 58vw" width="2400" height="1800" alt="Medication storage in a care setting" decoding="async" loading="lazy"></div><figcaption class="cap spec"><b>Fig. 2</b><span>Observed storage practice</span></figcaption></figure></div>
+</section></div><div class="wrap section"><section class="chapter flip">
+  <div class="text" data-stagger><p class="spec muted rv">02 · Product</p><h2 class="h3 rv">Designed for a kitchen, not a clinic</h2><p class="rv">Medi borrows from coffee machines so it blends into the home. A stepper-driven carousel holds three weeks of daily doses; servos release each dose and water, and light sensors confirm the pills have dropped.</p><p class="rv">A touchscreen and audio cues remind the patient when it is time.</p><ul class="specs spec rv"><li><span>Controller</span><span>ESP32</span></li><li><span>Carousel</span><span>1× slim NEMA 17 stepper</span></li><li><span>Release</span><span>2× SG90 micro servo</span></li><li><span>Sensing</span><span>4× LDR</span></li><li><span>Indicators</span><span>4× LED</span></li><li><span>Board</span><span>Custom PCB</span></li><li><span>Capacity</span><span>3 weeks of daily doses</span></li></ul></div>
+  <div class="vis figures" data-stagger><figure class="f rv wide"><div class="panel pad" style="aspect-ratio:4/5"><img src="../assets/img/medi-exploded-800.webp" srcset="../assets/img/medi-exploded-800.webp 800w" sizes="(max-width: 900px) 100vw, 58vw" width="800" height="1002" alt="Exploded render of the Medi dispenser" decoding="async" loading="lazy"></div><figcaption class="cap spec"><b>Fig. 3</b><span>Exploded assembly</span></figcaption></figure></div>
+</section></div><div class="wrap section"><section class="chapter">
+  <div class="text" data-stagger><p class="spec muted rv">03 · App</p><h2 class="h3 rv">Carers can check in from anywhere</h2><p class="rv">A paired app lets caregivers monitor doses remotely, so a missed dose is seen without a home visit.</p></div>
+  <div class="vis figures" data-stagger><figure class="f rv wide"><div class="panel cover" style="aspect-ratio:3/2"><img src="../assets/img/medi-app-1600.webp" srcset="../assets/img/medi-app-800.webp 800w, ../assets/img/medi-app-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 58vw" width="1600" height="1067" alt="Screens of the Medi companion app on several phones" decoding="async" loading="lazy"></div><figcaption class="cap spec"><b>Fig. 4</b><span>Companion app</span></figcaption></figure></div>
+</section></div><div class="night night-block"><div class="wrap"><section class="chapter flip">
+  <div class="text" data-stagger><p class="spec muted rv">04 · Build</p><h2 class="h3 rv">Hundreds of parts, one board</h2><p class="rv">A custom PCB brings the motors, sensors and display together cleanly. Using FDM printing and other rapid methods, we iterated through hundreds of individual component designs.</p></div>
+  <div class="vis figures" data-stagger><figure class="f rv "><div class="panel cover" style="aspect-ratio:4/3"><img src="../assets/img/medi-pcb-1600.webp" srcset="../assets/img/medi-pcb-800.webp 800w, ../assets/img/medi-pcb-1600.webp 1600w" sizes="(max-width: 900px) 50vw, 29vw" width="1600" height="1200" alt="PCB and wiring under test on the bench" decoding="async" loading="lazy"></div><figcaption class="cap spec"><b>Fig. 5</b><span>Custom PCB on test</span></figcaption></figure><figure class="f rv "><div class="panel cover" style="aspect-ratio:4/3"><img src="../assets/img/medi-parts-800.webp" srcset="../assets/img/medi-parts-800.webp 800w" sizes="(max-width: 900px) 50vw, 29vw" width="800" height="533" alt="Printed components laid out in rows" decoding="async" loading="lazy"></div><figcaption class="cap spec"><b>Fig. 6</b><span>Component iterations</span></figcaption></figure></div>
+</section></div></div>
+<div class="wrap"><a class="next" href="libra.html"><span class="spec muted">Next project · 03</span><span class="h2">Libra <span class="arrow" aria-hidden="true">→</span></span></a></div>
+</main>
+<footer class="wrap" id="contact">
+  <section class="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h" class="spec muted">Contact</h2>
+    <p style="margin-top:18px"><a class="mail" href="mailto:louis.mcevoy23@imperial.ac.uk">louis.mcevoy23<wbr>@imperial.ac.uk</a></p>
+    <div class="links">
+      <a class="btn" href="mailto:louis.mcevoy23@imperial.ac.uk">Email <span class="arrow" aria-hidden="true">→</span></a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/louis-mcevoy-3b7aa0287/" rel="noopener">LinkedIn <span class="arrow" aria-hidden="true">↗</span></a>
+      <a class="btn ghost" href="mailto:louissmcevoy@icloud.com">louissmcevoy@icloud.com</a>
+    </div>
+  </section>
+  <p class="bigname" aria-hidden="true">Louis McEvoy</p>
+  <div class="foot spec muted"><span>© 2026 Louis McEvoy</span><span>Design Engineering, Imperial College London</span><a href="#main">Back to top ↑</a></div>
+</footer>
+<script src="../assets/site.js" defer></script>
+</body>
+</html>

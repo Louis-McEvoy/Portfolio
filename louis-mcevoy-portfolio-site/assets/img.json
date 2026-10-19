@@ -1,0 +1,660 @@
+{
+"scope-hero": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+2584,
+1944
+],
+"alpha": true
+},
+"scope-front": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+3830,
+2471
+],
+"alpha": true
+},
+"scope-34": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+2893,
+2664
+],
+"alpha": true
+},
+"scope-top": {
+"w": [
+800
+],
+"ratio": [
+1373,
+2072
+],
+"alpha": true
+},
+"scope-ear": {
+"w": [
+800
+],
+"ratio": [
+951,
+876
+],
+"alpha": true
+},
+"scope-pod": {
+"w": [
+800
+],
+"ratio": [
+1053,
+879
+],
+"alpha": true
+},
+"scope-lattice": {
+"w": [
+800,
+1600
+],
+"ratio": [
+2142,
+2697
+],
+"alpha": true
+},
+"scope-lattice-c": {
+"w": [
+800,
+1600
+],
+"ratio": [
+1684,
+1672
+],
+"alpha": true
+},
+"scope-exploded": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+2613,
+2290
+],
+"alpha": true
+},
+"scope-green": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+3215,
+2520
+],
+"alpha": true
+},
+"scope-yellow": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+2463,
+1830
+],
+"alpha": true
+},
+"scope-sketch": {
+"w": [
+800
+],
+"ratio": [
+1073,
+836
+],
+"alpha": true
+},
+"scope-proto-shape": {
+"w": [
+800
+],
+"ratio": [
+935,
+356
+],
+"alpha": false
+},
+"scope-proto-ball": {
+"w": [
+800
+],
+"ratio": [
+935,
+354
+],
+"alpha": false
+},
+"scope-proto-foam": {
+"w": [
+800
+],
+"ratio": [
+865,
+402
+],
+"alpha": false
+},
+"scope-proto-slider": {
+"w": [
+585
+],
+"ratio": [
+585,
+651
+],
+"alpha": false
+},
+"medi-hero": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+4096,
+2692
+],
+"alpha": false
+},
+"medi-exploded": {
+"w": [
+800
+],
+"ratio": [
+1012,
+1268
+],
+"alpha": true
+},
+"medi-app": {
+"w": [
+800,
+1600
+],
+"ratio": [
+1600,
+1067
+],
+"alpha": false
+},
+"medi-parts": {
+"w": [
+800
+],
+"ratio": [
+1555,
+1036
+],
+"alpha": false
+},
+"medi-pcb": {
+"w": [
+800,
+1600
+],
+"ratio": [
+1600,
+1200
+],
+"alpha": false
+},
+"medi-desk": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+4032,
+3024
+],
+"alpha": false
+},
+"medi-home": {
+"w": [
+800
+],
+"ratio": [
+860,
+484
+],
+"alpha": false
+},
+"libra-hero": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+2731,
+4096
+],
+"alpha": false
+},
+"libra-detail": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+4096,
+2731
+],
+"alpha": false
+},
+"libra-dark": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+4032,
+3024
+],
+"alpha": false
+},
+"libra-use": {
+"w": [
+800,
+1600
+],
+"ratio": [
+2048,
+1536
+],
+"alpha": false
+},
+"libra-foodbank": {
+"w": [
+800,
+1600
+],
+"ratio": [
+2048,
+1536
+],
+"alpha": false
+},
+"libra-neck": {
+"w": [
+800,
+1600
+],
+"ratio": [
+1627,
+1980
+],
+"alpha": false
+},
+"libra-base": {
+"w": [
+800,
+1600
+],
+"ratio": [
+1699,
+1246
+],
+"alpha": false
+},
+"libra-camera": {
+"w": [
+800
+],
+"ratio": [
+1359,
+1242
+],
+"alpha": false
+},
+"noc-cover": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+4096,
+2731
+],
+"alpha": false
+},
+"noc-white": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+4096,
+2731
+],
+"alpha": false
+},
+"noc-side": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+4096,
+2731
+],
+"alpha": false
+},
+"noc-eyes": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+4096,
+2731
+],
+"alpha": false
+},
+"noc-leg": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+4096,
+2731
+],
+"alpha": false
+},
+"noc-pcb": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+4096,
+2731
+],
+"alpha": false
+},
+"noc-rack": {
+"w": [
+800
+],
+"ratio": [
+1447,
+2062
+],
+"alpha": false
+},
+"noc-gears": {
+"w": [
+800,
+1600
+],
+"ratio": [
+2209,
+1487
+],
+"alpha": false
+},
+"noc-arduino": {
+"w": [
+800,
+1600
+],
+"ratio": [
+1855,
+1539
+],
+"alpha": false
+},
+"aero-line": {
+"w": [
+800
+],
+"ratio": [
+1588,
+562
+],
+"alpha": false
+},
+"aero-c1": {
+"w": [
+800
+],
+"ratio": [
+1442,
+578
+],
+"alpha": false
+},
+"aero-c2": {
+"w": [
+800
+],
+"ratio": [
+1437,
+559
+],
+"alpha": false
+},
+"aero-render": {
+"w": [
+800
+],
+"ratio": [
+1033,
+430
+],
+"alpha": false
+},
+"aero-cfd-side": {
+"w": [
+800
+],
+"ratio": [
+940,
+380
+],
+"alpha": false
+},
+"aero-cfd-front": {
+"w": [
+800
+],
+"ratio": [
+993,
+541
+],
+"alpha": false
+},
+"aero-stream-top": {
+"w": [
+705
+],
+"ratio": [
+705,
+1130
+],
+"alpha": false
+},
+"aero-stream-side": {
+"w": [
+800
+],
+"ratio": [
+940,
+500
+],
+"alpha": false
+},
+"aero-sketch-front": {
+"w": [
+800
+],
+"ratio": [
+1197,
+691
+],
+"alpha": false
+},
+"aero-sketch-top": {
+"w": [
+800
+],
+"ratio": [
+1145,
+584
+],
+"alpha": false
+},
+"tmj-hero": {
+"w": [
+800,
+1600
+],
+"ratio": [
+1740,
+1570
+],
+"alpha": false
+},
+"tmj-v1": {
+"w": [
+800
+],
+"ratio": [
+820,
+700
+],
+"alpha": false
+},
+"tmj-v2": {
+"w": [
+800
+],
+"ratio": [
+840,
+700
+],
+"alpha": false
+},
+"tmj-mesh": {
+"w": [
+800
+],
+"ratio": [
+1119,
+792
+],
+"alpha": false
+},
+"tmj-fea": {
+"w": [
+800
+],
+"ratio": [
+1033,
+767
+],
+"alpha": false
+},
+"robo-final": {
+"w": [
+679
+],
+"ratio": [
+679,
+665
+],
+"alpha": false
+},
+"robo-samples": {
+"w": [
+416
+],
+"ratio": [
+416,
+410
+],
+"alpha": false
+},
+"robo-graph": {
+"w": [
+703
+],
+"ratio": [
+703,
+681
+],
+"alpha": false
+},
+"robo-field": {
+"w": [
+415
+],
+"ratio": [
+415,
+402
+],
+"alpha": false
+},
+"about-portrait": {
+"w": [
+800,
+1600
+],
+"ratio": [
+2303,
+4096
+],
+"alpha": false
+},
+"about-set": {
+"w": [
+800,
+1600,
+2400
+],
+"ratio": [
+4096,
+2303
+],
+"alpha": false
+}
+}
